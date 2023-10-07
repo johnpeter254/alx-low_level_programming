@@ -21,7 +21,6 @@ int main(void)
 		for (letter = 'A'; letter <= 'Z'; letter++)
 		{
 			putchar(alpha);/*print lower case*/
-			putchar(letter);/*print uppercase*/
 		}
 	}
 	putchar('\n');/*move to next line*/
