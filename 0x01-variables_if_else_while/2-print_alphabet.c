@@ -12,6 +12,7 @@ int main(void)
 {
 	char alpha;
 
+/* loop through a-z */
 	for (alpha = 'a'; alpha <= 'z'; alpha++)
 	{
 		putchar (alpha);
