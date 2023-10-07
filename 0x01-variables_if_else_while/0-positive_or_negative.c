@@ -2,9 +2,10 @@
 #include <time.h>
 #include <stdio.h>
 
-/* This program will assign 
+/* 
+ * This program will assign 
  * a random number to the 
- * variable n each time it is executed. *
+ * variable n each time it is executed.
  */
 int main(void)
 {
@@ -12,17 +13,19 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if(n>0)
+	
+	if (n > 0)
 	{
-		printf("is positive:%d\n", n);
+		printf("%d is positive\n", n);
 	}
-	else if(n==0)
+	else if (n == 0)
 	{
-		printf("is zero: %d\n", n);
+		printf("%d is zero\n", n);
 	}
 	else
 	{
-		printf("is negative: %d\n", n);
+		printf("%d is negative\n", n);
 	}
-		return (0);
+		
+	return (0);
 }
