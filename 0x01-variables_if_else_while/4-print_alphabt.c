@@ -1,11 +1,8 @@
 #include <stdio.h>
-/*
- *
+/**
  * main - start of code execute
  *
- *
- * return (0) -success
- *
+ * Return: Always 0 (success)
  */
 
 int main(void)
