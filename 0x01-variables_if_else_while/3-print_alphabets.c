@@ -1,31 +1,25 @@
 #include <stdio.h>
 
-/*
+/**
+ * main - Entry point
  *
- *main -  entry point main
- *
- *
- *
- * return (0) success
- *
+ * Return: Always 0 (success)
  */
-
 int main(void)
 {
 	char alpha;
 
-/*loop through lower case*/
 	for (alpha = 'a'; alpha <= 'z'; alpha++)
 	{
-		putchar(alpha); /*print lowercase*/
+		putchar(alpha);
 	}
-/*loop through uppercase*/
-		for (alpha = 'A'; alpha <= 'Z'; alpha++)
-		{
-			putchar(alpha);/*print uppercase*/
-		}
-	
-	putchar('\n');/*move to next line*/
 
-	return (0);/*return success*/
+	for (alpha = 'A'; alpha <= 'Z'; alpha++)
+	{
+		putchar(alpha);
+	}
+
+	putchar('\n');
+
+	return (0);
 }
