@@ -1,9 +1,7 @@
 #include <stdio.h>
 
-/*
- *main -entry point
- *
- * Description: this code counts the alphabets in lower case
+/**
+ * main -entry point
  *
  *
  * Return: 0 (success)
