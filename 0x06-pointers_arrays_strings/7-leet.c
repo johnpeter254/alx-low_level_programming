@@ -4,7 +4,7 @@
  * leet - encodes string into 1337
  * @str: string to be encoded
  *
- * Rteutn:pointer to encoded string
+ * Return: pointer to encoded string
  */
 
 char *leet(char *str)
@@ -24,5 +24,5 @@ char *leet(char *str)
 			}
 		}
 	}
-	return str;
+	return (str);
 }
