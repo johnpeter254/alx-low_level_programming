@@ -10,7 +10,7 @@
  * Return: 1 if succeded
  */
 
-int delete_nodeint_at_index(listint_t **head, insigned int index)
+int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 	unsigned int i;
 	listint_t *current, *temp;
@@ -35,7 +35,7 @@ int delete_nodeint_at_index(listint_t **head, insigned int index)
 	if (current == NULL || current->next == NULL)
 		return (-1);
 
-	temp = currenr->next;
+	temp = current->next;
 	current->next = temp->next;
 	free(temp);
 
