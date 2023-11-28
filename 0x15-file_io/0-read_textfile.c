@@ -2,6 +2,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <stdint.h>
 
 /**
  * read_textfile - Reads text file and prints to POSIX std output
@@ -11,11 +12,11 @@
  * Return: actual numbers of letters read and printed
  */
 
-ssize_t read_textfile(const char *filename, size_t letters)
+size_t read_textfile(const char *filename, size_t letters)
 {
 	int file_descriptor;
 	char *buffer;
-	ssize_t bytes_read, bytes_written;
+	size_t bytes_read, bytes_written;
 
 	if (filename == NULL)
 		return (0);
@@ -32,7 +33,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 
 	bytes_read = read(file_descriptor, buffer, letters);
-	if (bytes_read == -1)
+	if (bytes_read == SIZE_MAX)
 	{
 		free(buffer);
 		close(file_descriptor);
